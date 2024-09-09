@@ -8,6 +8,7 @@ provider "aws" {
   secret_key                  = var.secret_key
 }
 
+# password policy
 resource "aws_iam_account_password_policy" "strict" {
   minimum_password_length        = 8
   #require_lowercase_characters   = true
